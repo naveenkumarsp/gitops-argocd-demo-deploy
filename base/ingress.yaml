@@ -11,3 +11,18 @@ spec:
         backend:
           serviceName: demo
           servicePort: 80
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo
+spec:
+  rules:
+  - host: demoe2e.eqslearning.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: demoe2e
+          servicePort: 80
