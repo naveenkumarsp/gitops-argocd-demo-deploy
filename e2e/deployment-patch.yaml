@@ -10,3 +10,17 @@ spec:
         env:
         - name: ENVIRONMENT
           value: e2e
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo
+spec:
+  rules:
+  - host: demoe2e.eqslearning.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: demo
+          servicePort: 80
