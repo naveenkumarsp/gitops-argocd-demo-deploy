@@ -15,7 +15,7 @@ spec:
         app: demo
     spec:
       containers:
-      - image: alexmt/argocd-demo:f27903964ba8e31ad89c31379e300a35fe1632a3
+      - image: naveenkumarsp/gitops-argocd-demo:3ca4c02bef8177505105357a5434fe67a9277aaf
         name: demo
         ports:
         - containerPort: 8080
