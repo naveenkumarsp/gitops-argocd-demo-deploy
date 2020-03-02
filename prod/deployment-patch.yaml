@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: demo
+  name: demoprod
 spec:
   template:
     spec:
@@ -10,3 +10,17 @@ spec:
         env:
         - name: ENVIRONMENT
           value: prod
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demoprod
+spec:
+  rules:
+  - host: demoprod.eqslearning.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: demoprod
+          servicePort: 80
