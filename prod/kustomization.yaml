@@ -9,4 +9,4 @@ patchesStrategicMerge:
 
 images:
 - name: naveenkumarsp/argocd-demo
-  newTag: ee681d85d004490b1afbad23b29b9c9fede3f7ca
+  newTag: aac67fa373207c390cb3043ce1f0874ae66a6f10
